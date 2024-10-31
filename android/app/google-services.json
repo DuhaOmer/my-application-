@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "167776027129",
+    "project_id": "air-qq",
+    "storage_bucket": "air-qq.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167776027129:android:bd0dd5bf03ac1b2ca1fd28",
+        "android_client_info": {
+          "package_name": "com.example.air_quality"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJYzLndVFdyOYDzCJghTGy2fIJ4rJJvIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
