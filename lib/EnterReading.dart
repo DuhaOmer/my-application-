@@ -398,7 +398,10 @@ class _CounterWidgetState extends State<CounterWidgetState> {
                                                       (route) => false);
                                             }),
                                         TextButton(
-                                            child: Text("No"), onPressed: () {})
+                                            child: Text("No"),
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                            })
                                       ]);
                                 });
                           },

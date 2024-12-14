@@ -52,7 +52,7 @@ class HomepageState extends State<Homepage> {
                       color: const Color.fromARGB(255, 177, 141, 183),
                       child: MaterialButton(
                         child: const Text(
-                          "Standard values for gases",
+                          "Standard for gases",
                           style: TextStyle(fontSize: 15),
                         ),
                         onPressed: () {

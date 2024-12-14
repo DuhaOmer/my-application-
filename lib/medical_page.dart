@@ -136,22 +136,22 @@ class _MedicalPageState extends State<MedicalPage> {
         'mid': [
           "People with asthma or respiratory issues should be cautious and use preventive inhalers. Avoid prolonged outdoor activities, especially in poorly ventilated areas.",
           " Warning: Mild respiratory symptoms like coughing or shortness of breath may start to appear for individuals with respiratory diseases",
-          "Vaccination: Flu vaccine is recommended for individuals with asthma or respiratory diseases, as polluted air can increase the risk of respiratory infections."
+          //   "Vaccination: Flu vaccine is recommended for individuals with asthma or respiratory diseases, as polluted air can increase the risk of respiratory infections."
         ],
         'high': [
           "Wear face masks (such as N95) to reduce the inhalation of fine particles.",
           "Asthma or allergy sufferers should stay indoors in well-ventilated or air-filtered spaces and avoid outdoor activities",
           "Use air purifiers at home to help reduce the impact of fine particulate matter.",
           "Warning: Respiratory symptoms such as wheezing or coughing may significantly worsen for individuals with asthma and allergies.",
-          "Vaccination: Pneumococcal vaccine is recommended for individuals with asthma or respiratory problems to protect against lung infections, which can be exacerbated in polluted air.",
-          "Flu vaccine is recommended for all ages, especially those with respiratory conditions."
+          //       "Vaccination: Pneumococcal vaccine is recommended for individuals with asthma or respiratory problems to protect against lung infections, which can be exacerbated in polluted air.",
+          //     "Flu vaccine is recommended for all ages, especially those with respiratory conditions."
         ],
         'vhigh': [
           " Avoid going outdoors entirely and stay in air-filtered indoor environments.",
           " Individuals with asthma or chronic respiratory diseases should use emergency medications if their condition worsens",
           "Consider relocating to an area with better air quality if exposure to high levels persists.",
           " Warning: Rapid deterioration of lung function and increased risk of severe asthma attacks may occur, requiring immediate medical attention.",
-          "Vaccination: Pneumococcal vaccine and Flu vaccine are strongly recommended for individuals with asthma or chronic respiratory diseases to protect against infections that can worsen due to inhaling polluted air."
+          //   "Vaccination: Pneumococcal vaccine and Flu vaccine are strongly recommended for individuals with asthma or chronic respiratory diseases to protect against infections that can worsen due to inhaling polluted air."
         ]
       };
       for (String level in data1.keys) {
@@ -190,15 +190,15 @@ class _MedicalPageState extends State<MedicalPage> {
           " Limit time spent in crowded or poorly ventilated indoor spaces",
           " Regularly check CO2 levels if you work in enclosed areas.",
           " Warning: Prolonged exposure at this level may cause mild symptoms like drowsiness, headaches, and reduced focus.",
-          " Vaccination: Flu vaccine is recommended, especially for children under 5 years and adults over 65, as compromised air quality can make respiratory symptoms worse.",
+          //      " Vaccination: Flu vaccine is recommended, especially for children under 5 years and adults over 65, as compromised air quality can make respiratory symptoms worse.",
         ],
         'high': [
           " Improve ventilation immediately by using mechanical ventilation systems or moving to a more open area.",
           " Avoid strenuous activities in closed spaces at this level.",
           " Monitor CO2 levels regularly if you’re in high-risk locations such as classrooms, offices, or public transport",
           " Warning: Breathing air with this level of CO2 can lead to headaches, dizziness, and shortness of breath, especially for people with pre-existing respiratory conditions",
-          " Vaccination: Pneumococcal vaccine is recommended for older adults (65+ years) and children (under 2 years), as they are more vulnerable to respiratory infections.",
-          " Flu vaccine is also recommended for individuals with weakened immune systems."
+          // " Vaccination: Pneumococcal vaccine is recommended for older adults (65+ years) and children (under 2 years), as they are more vulnerable to respiratory infections.",
+          //   " Flu vaccine is also recommended for individuals with weakened immune systems."
         ],
         'vhigh': [
           " Evacuate the area and move to a well-ventilated or outdoor space immediately.",
@@ -206,8 +206,8 @@ class _MedicalPageState extends State<MedicalPage> {
           " install CO2 monitors if exposure is frequent in specific locations.",
           " Warning: High levels of CO2 can cause serious health issues like hyperventilation, increased heart rate, confusion, unconsciousness, and even asphyxiation if not addressed quickly",
           " High risk for children, elderly, and those with respiratory diseases like asthma or COPD.",
-          " Vaccination: Pneumococcal vaccine for those over 65 and those with chronic health issues, as respiratory infections are more likely in poor air conditions",
-          " COVID-19 vaccine for individuals over 12 years to prevent any exacerbation of respiratory issues caused by both poor air quality and infection"
+          //        " Vaccination: Pneumococcal vaccine for those over 65 and those with chronic health issues, as respiratory infections are more likely in poor air conditions",
+//          " COVID-19 vaccine for individuals over 12 years to prevent any exacerbation of respiratory issues caused by both poor air quality and infection"
         ]
       };
       for (String level in data1.keys) {
@@ -245,15 +245,15 @@ class _MedicalPageState extends State<MedicalPage> {
           " Use air purifiers indoors if outdoor ozone levels rise, especially in urban areas where ozone can accumulate.",
           " Warning: Mild irritation of the respiratory system (e.g., throat or nose irritation) may occur, especially in children, the elderly, and individuals with pre-existing lung conditions.",
           " Asthma sufferers may begin to notice mild symptoms such as wheezing or shortness of breath."
-              " Vaccination: Flu vaccine is recommended for children and the elderly to prevent respiratory infections that could be worsened by ozone exposure."
+          //        " Vaccination: Flu vaccine is recommended for children and the elderly to prevent respiratory infections that could be worsened by ozone exposure."
         ],
         'high': [
           " Children, the elderly, and individuals with asthma or other respiratory diseases should avoid outdoor activities, particularly in the afternoon when ozone levels tend to peak.",
           " Keep doors and windows closed and use indoor air filtration systems to maintain safe indoor air",
           " Warning: Noticeable respiratory symptoms such as coughing, shortness of breath, or chest tightness may occur for sensitive groups (especially children and the elderly).",
           " Increased risk of asthma attacks, particularly in children and older adults.",
-          " Vaccination: Pneumococcal vaccine is recommended for adults 65+ and individuals with asthma or chronic respiratory conditions to protect against lung infections, which ozone exposure can exacerbate.",
-          " Flu vaccine is also recommended, as compromised respiratory health makes it easier for viral infections to occur."
+          //  " Vaccination: Pneumococcal vaccine is recommended for adults 65+ and individuals with asthma or chronic respiratory conditions to protect against lung infections, which ozone exposure can exacerbate.",
+          //" Flu vaccine is also recommended, as compromised respiratory health makes it easier for viral infections to occur."
         ],
         'vhigh': [
           " Avoid going outdoors entirely, especially for vulnerable groups (children, the elderly, and individuals with asthma or chronic lung diseases).",
@@ -261,8 +261,8 @@ class _MedicalPageState extends State<MedicalPage> {
           " Asthma patients should follow emergency protocols and seek medical attention if their condition worsens.",
           " Warning: Severe respiratory symptoms such as difficulty breathing, chest pain, and wheezing are likely for all age groups, particularly for those with pre-existing lung conditions.",
           " Children and the elderly are at a higher risk for lung inflammation and reduced lung function, which may require hospitalization.",
-          " Vaccination: Pneumococcal vaccine is highly recommended for children under 2, adults 65+, and anyone with asthma or chronic lung conditions, as exposure to high ozone levels can increase susceptibility to lung infections.",
-          "Flu vaccine is recommended for all ages, but especially for children, elderly individuals, and those with respiratory conditions to help prevent exacerbation of symptoms."
+          //    " Vaccination: Pneumococcal vaccine is highly recommended for children under 2, adults 65+, and anyone with asthma or chronic lung conditions, as exposure to high ozone levels can increase susceptibility to lung infections.",
+          //  "Flu vaccine is recommended for all ages, but especially for children, elderly individuals, and those with respiratory conditions to help prevent exacerbation of symptoms."
         ]
       };
       for (String level in data1.keys) {
@@ -300,23 +300,23 @@ class _MedicalPageState extends State<MedicalPage> {
           " People with asthma or respiratory issues should reduce time spent in poorly ventilated areas where formaldehyde might be present",
           " Warning: Mild irritation of the eyes, nose, or throat may occur for sensitive individuals.",
           " warning: People with respiratory conditions may experience slight discomfort or coughing.",
-          " Vaccination: Flu vaccine is recommended to protect against respiratory infections, as formaldehyde exposure can exacerbate asthma symptoms"
+          // " Vaccination: Flu vaccine is recommended to protect against respiratory infections, as formaldehyde exposure can exacerbate asthma symptoms"
         ],
         'high': [
           " Avoid using products that emit formaldehyde indoors and use activated carbon filters to remove it from the air.",
           " People with asthma or allergies should stay in well-ventilated areas and avoid exposure to potential formaldehyde sources",
           " Formaldehyde at this level may cause noticeable respiratory symptoms like coughing, wheezing, or eye irritation.",
           " Individuals with asthma may experience more frequent attacks or need to increase the use of inhalers.",
-          " Vaccination: Pneumococcal vaccine is recommended for individuals with respiratory conditions to reduce the risk of infections caused by weakened lung function.",
-          " Flu vaccine is also recommended as formaldehyde can irritate the respiratory system.",
+          //       " Vaccination: Pneumococcal vaccine is recommended for individuals with respiratory conditions to reduce the risk of infections caused by weakened lung function.",
+          //     " Flu vaccine is also recommended as formaldehyde can irritate the respiratory system.",
         ],
         'vhigh': [
           " Avoid using products that emit formaldehyde indoors and use activated carbon filters to remove it from the air.",
           " People with asthma or allergies should stay in well-ventilated areas and avoid exposure to potential formaldehyde sources",
           " Formaldehyde at this level may cause noticeable respiratory symptoms like coughing, wheezing, or eye irritation.",
           " Individuals with asthma may experience more frequent attacks or need to increase the use of inhalers.",
-          " Vaccination: Pneumococcal vaccine is recommended for individuals with respiratory conditions to reduce the risk of infections caused by weakened lung function.",
-          " Flu vaccine is also recommended as formaldehyde can irritate the respiratory system."
+          //   " Vaccination: Pneumococcal vaccine is recommended for individuals with respiratory conditions to reduce the risk of infections caused by weakened lung function.",
+          // " Flu vaccine is also recommended as formaldehyde can irritate the respiratory system."
         ]
       };
       for (String level in data1.keys) {
@@ -352,23 +352,23 @@ class _MedicalPageState extends State<MedicalPage> {
           " Individuals with heart disease or respiratory issues should be cautious and minimize exposure, particularly in poorly ventilated spaces.",
           " Ensure that carbon monoxide detectors are installed and functioning in homes and workplaces.",
           " Warning: Some sensitive individuals may experience mild symptoms, such as headache or dizziness.",
-          " Vaccination: Flu vaccine is recommended for individuals with heart or respiratory conditions, as they may be at higher risk of complications from infections."
+          //   " Vaccination: Flu vaccine is recommended for individuals with heart or respiratory conditions, as they may be at higher risk of complications from infections."
         ],
         'high': [
           " Individuals with respiratory diseases (especially children and the elderly) should avoid prolonged exposure and consider staying indoors with fresh air.",
           " Use carbon monoxide detectors to alert occupants of rising levels and ventilate the area immediately if readings increase.",
           " Warning: Symptoms such as headache, dizziness, and fatigue may be experienced, particularly in sensitive populations",
           " Individuals with heart conditions may face increased risks of complications.",
-          " Vaccination: Pneumococcal vaccine is recommended for individuals with heart or respiratory conditions to protect against lung infections.",
-          " Flu vaccine is also recommended to prevent respiratory infections that could worsen symptoms"
+          //   " Vaccination: Pneumococcal vaccine is recommended for individuals with heart or respiratory conditions to protect against lung infections.",
+          // " Flu vaccine is also recommended to prevent respiratory infections that could worsen symptoms"
         ],
         'vhigh': [
           " Individuals with respiratory diseases (especially children and the elderly) should avoid prolonged exposure and consider staying indoors with fresh air.",
           " Use carbon monoxide detectors to alert occupants of rising levels and ventilate the area immediately if readings increase.",
           " Warning: Symptoms such as headache, dizziness, and fatigue may be experienced, particularly in sensitive populations",
           " Individuals with heart conditions may face increased risks of complications.",
-          " Vaccination: Pneumococcal vaccine is recommended for individuals with heart or respiratory conditions to protect against lung infections.",
-          " Flu vaccine is also recommended to prevent respiratory infections that could worsen symptoms"
+          //   " Vaccination: Pneumococcal vaccine is recommended for individuals with heart or respiratory conditions to protect against lung infections.",
+          // " Flu vaccine is also recommended to prevent respiratory infections that could worsen symptoms"
         ]
       };
       for (String level in data1.keys) {
@@ -658,7 +658,7 @@ class _MedicalPageState extends State<MedicalPage> {
             child: Image.asset(fit: BoxFit.fill, "images/images mid.webp"));
         isloading = false;
       });
-    } else if (O3! <= 0.15 && O3! >= 0.101) {
+    } else if (O3! <= 0.15 && O3! >= 0.1001) {
       setState(() {
         isloading = true;
         range = 'high';
@@ -711,7 +711,7 @@ class _MedicalPageState extends State<MedicalPage> {
         isloading = false;
       });
     }
-    if (CO! <= 5 && O3! >= 0) {
+    if (CO! <= 5 && CO! >= 0) {
       //o3
       setState(() {
         isloading = true;

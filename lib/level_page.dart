@@ -1,6 +1,3 @@
-import 'dart:math';
-
-import 'package:air_quality/main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -142,7 +139,7 @@ class _LevelPageState extends State<LevelPage> {
     }
   }
 
-  funpie() {}
+  //funpie() {}
 
 // دالة لحساب AQI لكل غاز
   double calculateAQI(double value, double goodLimit, double moderateLimit,
@@ -250,7 +247,7 @@ class _LevelPageState extends State<LevelPage> {
                     child: Container(
                       child: Text(""),
                     )),
-                Expanded(flex: 3, child: Text("Moderate [25%-50%]")),
+                Expanded(flex: 3, child: Text("Moderate [26%-50%]")),
                 Expanded(
                     flex: 1,
                     child: Container(
@@ -515,7 +512,7 @@ class _LevelPageState extends State<LevelPage> {
                           color: Colors.purple),
                     )),
               ]),
-              Container(
+              SizedBox(
                 height: 355,
                 child: PieChart(
                   PieChartData(

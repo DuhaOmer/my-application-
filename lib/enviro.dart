@@ -579,7 +579,7 @@ class EnviroState extends State<Enviro> {
                     );
                   }),
             ),
-            Text("\n##according to Temp input... \n"),
+            Text("\n##according to Temperature input... \n"),
             Container(
               margin: EdgeInsets.all(10),
               width: 400,

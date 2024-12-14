@@ -1,12 +1,94 @@
-import 'package:air_quality/after_submitted.dart.';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-void main() {
-  runApp(const TempLevel());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    await Firebase.initializeApp();
+    print("Firebase initialized successfully");
+  } catch (e) {
+    print("Failed to initialize Firebase: $e");
+  }
+  runApp(TempLevel());
+}
+//TempLevel
+
+class TempLevel extends StatefulWidget {
+  const TempLevel({super.key}); // Make sure this key is there
+
+  @override
+  _TempLevelState createState() => _TempLevelState();
 }
 
-class TempLevel extends StatelessWidget {
-  const TempLevel({super.key}); // تأكد من وجود هذا المفتاح
+class _TempLevelState extends State<TempLevel> {
+  // تأكد من وجود هذا المفتاح
+  double? Tmp;
+  double? CO2, NO2, PM1, PM10, PM25, CH2O, O3, CO, Temp, Humidity;
+  bool isloading = false;
+  String x1 = "";
+
+  //void fun(Temp) {}
+
+  getData() async {
+    setState(() {
+      isloading = true;
+    });
+    try {
+      // Define your document IDs in a list
+      List<String> documentIds = [
+        "H82QRj9aLU06pJg4KE6X",
+      ];
+      for (String documentId in documentIds) {
+        DocumentSnapshot documentSnapshot = await FirebaseFirestore.instance
+            .collection("catogry") //catogry
+            .doc(documentId)
+            .get();
+        if (documentSnapshot.exists) {
+          setState(() {
+            Temp = documentSnapshot['Temp'] ?? 0;
+            isloading = false;
+          });
+        } else {
+          setState(() {
+            isloading = false;
+          });
+          print('Document with ID $documentId not found');
+        }
+      }
+    } catch (e) {
+      setState(() {
+        isloading = false;
+      });
+      print('Error retrieving data: $e');
+    }
+  } //end of get reading
+
+  void fum(Temp) {
+    if (Temp <= 0) {
+      setState(() {
+        x1 =
+            " #according to entered Temperature value ,the weather is very cold";
+      });
+    } else if (Temp > 0 && Temp < 15) {
+      setState(() {
+        x1 = " #according to entered Temperature value ,the weather is cold ";
+      });
+    } else if (Temp >= 16 && Temp < 20) {
+      setState(() {
+        x1 =
+            " #according to entered Temperature value ,the weather is moderate but tends to be cold  ";
+      });
+    } else if (Temp >= 20 && Temp < 30) {
+      setState(() {
+        x1 = " #according to entered Temperature value ,the weather  warm ";
+      });
+    } else {
+      setState(() {
+        x1 = " #according to entered Temperature value ,the weather is Hot  ";
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +100,32 @@ class TempLevel extends StatelessWidget {
       body: ListView(
         children: [
           Container(
+              child: TextButton(
+            onPressed: () async {
+              await getData();
+              fum(Temp);
+            },
+            child: Text(
+              "get the description ",
+              style: TextStyle(color: Colors.blue),
+            ),
+          )),
+          Padding(
               padding: EdgeInsets.all(10),
-              child: Text(
-                  "   ##Level of temp according to the value of temp sensor")),
+              child: Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue, width: 2),
+                ),
+                child: ListTile(
+                  title: Text(
+                    "weather ",
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                  subtitle: Text(x1, maxLines: 2),
+                  //  isThreeLine: true,
+                ),
+              )),
           Row(children: [
             Expanded(
                 flex: 3,
@@ -42,9 +147,9 @@ class TempLevel extends StatelessWidget {
             Expanded(
                 flex: 3,
                 child: Container(
-                  child: Text(""),
-                )),
-            Expanded(flex: 3, child: Text("cold ~[0-10]°C")),
+                    // child: Text(""),
+                    )),
+            Expanded(flex: 3, child: Text("cold ~[0-15]°C")),
             Expanded(
                 flex: 1,
                 child: Container(
@@ -57,7 +162,7 @@ class TempLevel extends StatelessWidget {
           //Row 3
           Row(mainAxisAlignment: MainAxisAlignment.start, children: [
             Expanded(flex: 3, child: Container()),
-            Expanded(flex: 3, child: Text("Mid ~[10-20]°C")),
+            Expanded(flex: 3, child: Text("Mid ~[16-20]°C")),
             Expanded(
                 flex: 1,
                 child: Container(
@@ -378,7 +483,11 @@ class TempLevel extends StatelessWidget {
                                     Navigator.of(context).pop();
                                     Navigator.of(context).pop();
                                   }),
-                              TextButton(child: Text("No"), onPressed: () {})
+                              TextButton(
+                                  child: Text("No"),
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  })
                             ]);
                       });
                 },

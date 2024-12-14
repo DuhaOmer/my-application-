@@ -52,25 +52,6 @@ class AfterSubmittedState extends State<AfterSubmitted> {
               color: const Color.fromARGB(255, 159, 126, 165),
               child: MaterialButton(
                 child: const Text(
-                  "pollution level",
-                  style: TextStyle(fontSize: 16),
-                ),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const LevelPage(),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 200,
-            child: Card(
-              color: const Color.fromARGB(255, 159, 126, 165),
-              child: MaterialButton(
-                child: const Text(
                   "Enviroment Feild",
                   style: TextStyle(fontSize: 16),
                 ),
@@ -84,6 +65,26 @@ class AfterSubmittedState extends State<AfterSubmitted> {
               ),
             ),
           ),
+          SizedBox(
+            height: 200,
+            child: Card(
+              color: const Color.fromARGB(255, 159, 126, 165),
+              child: MaterialButton(
+                child: const Text(
+                  "pollution level",
+                  style: TextStyle(fontSize: 16),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const LevelPage(),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+
           SizedBox(
             height: 200,
             child: Card(

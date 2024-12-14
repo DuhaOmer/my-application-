@@ -45,7 +45,7 @@ class _AboutGasestState extends State<AboutGases> {
                   )),
                   Container(
                       padding: const EdgeInsets.all(10.2),
-                      height: 300,
+                      height: 300, // 300 not 500
                       width: 200,
                       color: Colors.grey,
                       child: ListView(children: const [
@@ -169,7 +169,7 @@ class _AboutGasestState extends State<AboutGases> {
                   )),
                   Container(
                       padding: const EdgeInsets.all(10.2),
-                      height: 300,
+                      height: 300, // 300
                       width: 200,
                       color: Colors.grey,
                       child: ListView(children: const [
@@ -208,7 +208,7 @@ class _AboutGasestState extends State<AboutGases> {
                   )),
                   Container(
                       padding: const EdgeInsets.all(10.2),
-                      height: 300,
+                      height: 300, // 300
                       width: 200,
                       color: Colors.grey,
                       child: ListView(children: const [
@@ -249,7 +249,7 @@ class _AboutGasestState extends State<AboutGases> {
                   )),
                   Container(
                       padding: const EdgeInsets.all(10.2),
-                      height: 300,
+                      height: 300, //300
                       width: 200,
                       color: Colors.grey,
                       child: ListView(children: const [
@@ -288,7 +288,7 @@ class _AboutGasestState extends State<AboutGases> {
                   )),
                   Container(
                       padding: const EdgeInsets.all(10.2),
-                      height: 300,
+                      height: 300, //300
                       width: 200,
                       color: Colors.grey,
                       child: ListView(children: const [

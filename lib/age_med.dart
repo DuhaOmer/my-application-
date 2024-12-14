@@ -1,5 +1,5 @@
 import 'package:air_quality/medical_page.dart';
-import 'package:air_quality/test_medical.dart'; //AgeMed
+//AgeMed
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
