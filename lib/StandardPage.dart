@@ -72,7 +72,7 @@ class _StandardPageState extends State<StandardPage> {
               title: const Text("CH2O"),
               leading: const Text("3"),
               trailing: const Text(
-                " 0 - 0.1 mg/m³",
+                " 0 - 0.06 mg/m³",
                 style: TextStyle(fontSize: 16.9),
               ),
               onTap: () {

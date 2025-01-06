@@ -270,7 +270,7 @@ class _TempLevelState extends State<TempLevel> {
                       Padding(
                         padding: EdgeInsets.all(5),
                         child: Text(
-                          " Cold: 0°C to 10°C",
+                          " Cold: 0°C to 15°C",
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
@@ -326,7 +326,7 @@ class _TempLevelState extends State<TempLevel> {
                         Padding(
                             padding: EdgeInsets.all(5),
                             child: Text(
-                              " Mid: 10°C to 20°C",
+                              " Mid: 16°C to 20°C",
                               style: TextStyle(fontSize: 16),
                             )),
                         Padding(

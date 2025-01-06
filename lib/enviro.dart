@@ -291,9 +291,9 @@ class EnviroState extends State<Enviro> {
           "  Use insulating covers to protect crops.\n",
           "  Plant frost-resistant crops.\n",
           "  Improve insulation in greenhouses.\n",
-          "  Limit watering to prevent root freezing\n",
+          //    "  Limit watering to prevent root freezing\n",
           "  Slow-release nitrogen fertilizer=> maintains gradual nutrient availability in cold.\n"
-              "  Organic compost: improves soil warmth and texture, aiding root insulation.\n"
+              "  Organic compost: Compost adds valuable organic matter to your soil, while mulch protects it from erosion, conserves moisture, and regulates soil temperature.\n"
         ],
         'mid': [
           "  Continue planting according to appropriate conditions.\n",
@@ -305,13 +305,14 @@ class EnviroState extends State<Enviro> {
           "  Organic manure: offers a steady supply of nutrients during the growing season.\n"
         ],
         'high': [
-          "  Provide effective irrigation systems such as drip irrigation.\n",
+          "  Provide effective irrigation systems  such as drip irrigation, ensures that water is delivered directly to the plant roots, minimizing evaporation and promoting deep root growth.\n",
           "  Use shade to protect plants.\n",
           "  Apply mulch to prevent water evaporation and keep root zones cooler.\n",
           "  Organic mulch=> retains soil moisture and reduces soil temperature.\n",
           "  Compost tea=> provides nutrients without stressing roots under heat\n"
         ],
         'vhigh': [
+          "Water Deeply If you water for just a few minutes every day, plants will develop shallow roots that won’t stand up to extreme heat. It’s much better to water less often but water deeply so the soil is wet at least three inches deep",
           "  Increase watering schedules to prevent dehydration and root damage\n",
           "  Consider greenhouse cooling systems or shade nets to reduce heat exposure.\n",
           "  Add soil conditioners to improve water retention in sandy soils.\n",
@@ -391,8 +392,8 @@ class EnviroState extends State<Enviro> {
       String range; // to determine the range based on gas values
 
       // Logic to set range based on gas levels
-      if (CO2 != null && CO != null) {
-        if (CO2! <= 400 && CO! >= 0) {
+      if (CO2 != null && CO2 != null) {
+        if (CO2! <= 400 && CO2! >= 0) {
           range = 'low';
         } else if (CO2! > 400 && CO2! <= 800) {
           range = 'mid';

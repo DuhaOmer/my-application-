@@ -78,8 +78,8 @@ class _AgeMedState extends State<AgeMed> {
                 });
               }),
           RadioListTile(
-              title: const Text("31-60"),
-              value: "31-60",
+              title: const Text("31-50"),
+              value: "31-50",
               groupValue: age,
               onChanged: (val) {
                 setState(() {
@@ -87,8 +87,8 @@ class _AgeMedState extends State<AgeMed> {
                 });
               }),
           RadioListTile(
-              title: const Text("more than 60"),
-              value: "60-100",
+              title: const Text(" more than 50"),
+              value: "50-100",
               groupValue: age,
               onChanged: (val) {
                 setState(() {
