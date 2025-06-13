@@ -1,16 +1,26 @@
-# air_quality
+# Air Quality Monitor
 
-A new Flutter project.
+A Flutter application that allows users to manually input air quality data and view detailed pollution statistics and recommendations.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Manual input of air quality gases such as CH2O, O3, CO2, and others.
+- Display pollution percentage as a pie chart representing the distribution of pollution among gases.
+- Dedicated pages with detailed information about each gas.
+- Provide environmental and medical recommendations based on the input data.
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter & Dart
+- Charting library for data visualization (e.g., charts_flutter)
+- Firebase
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/DuhaOmer/my-application-.git
+
+
+
+
